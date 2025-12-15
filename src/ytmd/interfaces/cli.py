@@ -37,7 +37,7 @@ def main():
             cancel_event = cancel_event,
             playlist_name = playlist_name
         )
-        print(f"The playlist '{playlist_name}' has been successfully downloaded.")
+        print(f"\nThe playlist '{playlist_name}' has been successfully downloaded.")
     except KeyboardInterrupt:
         cancel_event.set()
         print("\nCanceled by user.")

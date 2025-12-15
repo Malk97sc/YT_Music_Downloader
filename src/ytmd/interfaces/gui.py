@@ -8,7 +8,7 @@ def main():
         cancel_event = threading.Event() #cancel for all threads
 
         #page configuration
-        page.title = "Music Download"
+        page.title = " YT Music Downloader"
         page.window.width = 400
         page.window.height = 230
         page.theme_mode = 'dark'
