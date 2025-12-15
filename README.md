@@ -24,12 +24,13 @@ A desktop application to download audio from a YouTube playlists and automatical
 ```bash
 YT-Music-Downloader/
 ├── src/
-    └── ytmd/
-        ├── __init__.py
-        ├── app.py
-        ├── downloader/
-        ├── interfaces/
-        └── utils/
+│    ├── ytmd/
+│    │    ├── downloader/
+│    │    ├── interfaces/
+│    │    ├── utils/
+│    │    ├── app.py
+│    │    └── __init__.py
+│    └── __init__.py
 ├── pyproject.toml
 ├── .gitignore
 └── README.md
@@ -63,8 +64,6 @@ source ytVenv/bin/activate
 
 ### 3. Install the package
 
-Install the project:
-
 ```bash
 pip install .
 ```
@@ -84,8 +83,6 @@ You will be prompted to enter a YouTube playlist URL:
 ```text
 Playlist URL: <URL_link>
 ```
-
-Progress will be displayed directly in the terminal.
 
 ### GUI mode
 
