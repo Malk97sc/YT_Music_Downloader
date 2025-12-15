@@ -5,7 +5,18 @@ from ytmd.downloader.playlist import downloadPlaylist
 def progress(completed, total):
     print(f"\rDownloaded {completed}/{total}", end="", flush=True)
 
+def print_banner():
+    banner = r"""
+    ╔══════════════════════════════════════╗
+    ║        YT Music Downloader           ║
+    ║            CLI Mode                  ║
+    ║          Malak Sanchez               ║
+    ╚══════════════════════════════════════╝
+    """
+    print(banner)
+
 def main():
+    print_banner()
     url = input("Playlist URL: ").strip()
     if not url:
         print("Invalid URL")
