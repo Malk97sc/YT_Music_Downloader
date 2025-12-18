@@ -57,15 +57,18 @@ cd YT_Music_Downloader
 
 ### 2. Create and activate a virtual environment
 
+Instead of using venv or conda, I gonna recommend using UV to manage the virtual environments.
+[UV](https://docs.astral.sh/uv/#highlights)
+
 ```bash
-python3 -m venv ytVenv
+uv venv ytVenv
 source ytVenv/bin/activate
 ```
 
 ### 3. Install the package
 
 ```bash
-pip install .
+uv pip install .
 ```
 
 ## Usage
